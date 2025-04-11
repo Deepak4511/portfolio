@@ -19,8 +19,7 @@ const Navbar = () => {
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
-          }}
-        >
+          }}>
           <p className="">Deepak Kumar</p>
         </Link>
 
