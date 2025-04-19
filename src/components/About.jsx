@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => {
   return(
    <Tilt
-  className='xs:w-[250px] w-full'
+  className='sm:w-[250px] w-full'
   tiltMaxAngleX={45}
   tiltMaxAngleY={45}
   scale={1}
@@ -53,7 +53,7 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
