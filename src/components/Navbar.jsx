@@ -23,6 +23,8 @@ const Navbar = () => {
           <p className="">Deepak Kumar</p>
         </Link>
 
+{/* Desktop nav */}
+        <div className="sm:flex hidden items-center gap-10">
         <ul className="sm:flex hidden flex-row list-none gap-10">
           {navLinks.map((nav) => (
             <li
@@ -36,6 +38,19 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+         {/* Download Button */}
+          <a
+            href="" // Update this to your actual file path
+            download
+            className="ml-4 px-4 py-2 bg-[#915eff] text-white rounded-md hover:bg-[#7a4bff] transition"
+          >
+            Download
+          </a>
+        </div>
+
+
+          {/* Mobile nav */}
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -61,7 +76,19 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+           <li>
+                <a
+                  href="/Deepak-Kumar-Resume.pdf"
+                  download
+                  className="text-white px-3 py-1 bg-[#915eff] rounded-md hover:bg-[#7a4bff]"
+                >
+                  Download
+                </a>
+              </li>
+          
         </ul>
+        <Link to="">Download</Link>
           </div>
         </div>
       </div>

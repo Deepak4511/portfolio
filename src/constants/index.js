@@ -4,7 +4,6 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -13,12 +12,12 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  java,
+  php,
+  bootstrap,
+  next,
+  sql,
+  github,
   carrent,
   jobit,
   tripguide,
@@ -72,10 +71,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  
   {
     name: "React JS",
     icon: reactjs,
@@ -104,21 +100,43 @@ const technologies = [
     name: "git",
     icon: git,
   },
+
   {
-    name: "figma",
-    icon: figma,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "php",
+    icon: php,
   },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "Next JS",
+    icon: next,
+  },
+   {
+    name: "SQL",
+    icon: sql,
+  },
+
+   {
+    name: "github",
+    icon: github,
+  },
+
+
+  
+  
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
     company_name: "Youstable",
-    icon: starbucks,
+    icon: reactjs,
     iconBg: "#383E56",
     date: "March 2020 - April 2024",
     points: [
@@ -131,7 +149,7 @@ const experiences = [
   {
     title: "Php Developer",
     company_name: "",
-    icon: tesla,
+    icon: reactjs,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2024",
     points: [
@@ -144,7 +162,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Laravel",
-    icon: shopify,
+    icon: reactjs,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -157,7 +175,7 @@ const experiences = [
   {
     title: "Full stack Developer",
     company_name: "",
-    icon: meta,
+    icon: reactjs,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [

@@ -29,6 +29,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import bootstrap from "./tech/bootstrap.png";
+import java from "./tech/java.png";
+import next from "./tech/nextjs.png";
+import sql from "./tech/sql.png";
+import php from "./tech/php.png";
+import linkdin  from "./linkedin.png"
 
 export {
   logo,
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  bootstrap,
+  java,
+  next,
+  sql,
+  php,
+  linkdin
 };

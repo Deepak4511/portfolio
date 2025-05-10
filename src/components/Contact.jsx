@@ -4,8 +4,12 @@ import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import emailjs from "@emailjs/browser";
+import { github, linkdin } from "../assets";
+import { Link } from "react-router-dom";
+
 
 import { useRef, useState } from "react";
+import { link } from "framer-motion/client";
 
 const Contact = () => {
   const formRef = useRef();
@@ -104,12 +108,39 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-[#151030] py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex justify-between">
+            <button
+              type="submit"
+              className="bg-[#151030] py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+
+            <div className=" inset-0 flex justify-end m-3 card-img_hover">
+              <div
+              onClick={() => window.open("https://github.com/Deepak4511", "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+
+               <div
+                onClick={() => window.open("https://www.linkedin.com/in/deepak-kumar-kushwaha-80021a163/", "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer ms-3"
+              >
+                <img
+                  src={linkdin}
+                  alt="linkdin"
+                  className="w-1/2 h-1/2 object-contain rounded-full"
+                />
+              </div>
+
+            </div>
+          </div>
         </form>
       </motion.div>
 
